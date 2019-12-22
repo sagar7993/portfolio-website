@@ -85,7 +85,7 @@
 	var footerClick = function () {
 
 
-		$(document).on('click', '#ftco-footer-widget a[href^="#"]', function (event) {
+		$(document).on('click', '.ftco-footer .ftco-footer-widget .list-unstyled a[href^="#"]', function (event) {
 			event.preventDefault();
 
 			var href = $.attr(this, 'href');
@@ -104,7 +104,7 @@
 	var homeWidgetClick = function () {
 
 
-		$(document).on('click', '.mouse a[href^="#"]', function (event) {
+		$(document).on('click', '#home-section .mouse a[href^="#"]', function (event) {
 			event.preventDefault();
 
 			var href = $.attr(this, 'href');
