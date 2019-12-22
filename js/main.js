@@ -100,25 +100,6 @@
 	};
 
 	footerClick();
-
-	var homeWidgetClick = function () {
-
-
-		$(document).on('click', '#home-section .mouse a[href^="#"]', function (event) {
-			event.preventDefault();
-
-			var href = $.attr(this, 'href');
-
-			$('html, body').animate({
-				scrollTop: $($.attr(this, 'href')).offset().top - 70
-			}, 500, function () {
-				// window.location.hash = href;
-			});
-		});
-
-	};
-
-	homeWidgetClick();
 	
 
 	var carousel = function() {
@@ -315,7 +296,7 @@
 			event.preventDefault();
 
 			$('html,body').animate({
-				scrollTop: $('.goto-here').offset().top
+				scrollTop: $($.attr(this, 'href')).offset().top - 70
 			}, 500, 'easeInOutExpo');
 			
 			return false;
