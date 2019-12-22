@@ -81,6 +81,44 @@
 	};
 
 	onePageClick();
+
+	var footerClick = function () {
+
+
+		$(document).on('click', '#ftco-footer-widget a[href^="#"]', function (event) {
+			event.preventDefault();
+
+			var href = $.attr(this, 'href');
+
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - 70
+			}, 500, function () {
+				// window.location.hash = href;
+			});
+		});
+
+	};
+
+	footerClick();
+
+	var homeWidgetClick = function () {
+
+
+		$(document).on('click', '.mouse a[href^="#"]', function (event) {
+			event.preventDefault();
+
+			var href = $.attr(this, 'href');
+
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - 70
+			}, 500, function () {
+				// window.location.hash = href;
+			});
+		});
+
+	};
+
+	homeWidgetClick();
 	
 
 	var carousel = function() {
