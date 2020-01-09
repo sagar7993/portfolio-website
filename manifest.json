@@ -1,0 +1,13 @@
+{
+    "name": "Sagar Jain Portfolio",
+    "short_name": "Sagar Jain",
+    "icons": [{
+        "src": "images/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/ico"
+    }],
+    "start_url": ".",
+    "theme_color": "#3E64FF",
+    "background_color": "#3E64FF",
+    "display": "standalone"
+}
