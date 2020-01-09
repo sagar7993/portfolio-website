@@ -11719,7 +11719,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999;
+  color: #333333;
 }
 
 body.menu-show {
@@ -12006,8 +12006,8 @@ h5,
 
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
-  border-color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 1) !important;
+  border-color: rgba(0, 0, 0, 1) !important;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 16px;
